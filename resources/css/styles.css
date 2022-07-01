@@ -133,7 +133,7 @@ a:hover {
 /* ==================== Main Content Styles ==================== */
 
 section.top-buffer {
-    padding-top: 57rem;
+    padding-top: 58rem;
 }
 
 /* ==================== About Styles ==================== */
@@ -249,6 +249,12 @@ footer div {
 }
 
 /* ==================== Media Queries ==================== */
+
+@media only screen and (min-width: 1921px ) {
+    section.top-buffer {
+        padding-top: 95rem;
+    }
+}
 
 @media only screen and (max-width: 1400px) {
     h2 {
