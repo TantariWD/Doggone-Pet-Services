@@ -1,7 +1,7 @@
 <h1>Doggone Pet Services</h1>
 <h2><a href="https://tantariwd.github.io/Doggone-Pet-Services/" target="_blank" title="tantariwd.github.io/Doggone-Pet-Services">Demo</a></h2>
 <h3> A Codecademy Challenge Project</h3>
-<h2>v.1. Responsive up to 768px</h2>
+<h2>v.1. Responsive down to 768px</h2>
 <h2>Overview</h2>
 <p>This is a flexbox project from the Codecademy Front-End Engineer Path. The project listed a series of open-ended requirements which were used to build this website. Doggone Pet Services is a business of my own creation, and responds dynamically <b>(up to 768px v.1. awaiting JavaScript instruction)</b> as the screen is adjusted.
 
