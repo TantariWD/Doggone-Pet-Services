@@ -1,3 +1,8 @@
+
+
+/* ==================== Universal Styling ========== */
+/* ==================== Overall & Positioning ========== */
+
 html {
     font-family: 'Josefin Slab', sans-serif;
     color: hsl(0, 0%, 43%);
@@ -18,6 +23,15 @@ main {
     background-position: center center;
     height: 100%;
 }
+
+article.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* ==================== Universal Font Styling ==================== */
+
 .chalk {
     color: hsl(0, 50%, 69%);
 }
@@ -37,12 +51,33 @@ p {
     font-size: 1.5rem;
 }
 
+/* ==================== Universal Figure Styling ==================== */
+
 figure {
-    text-align: left;
+   border: solid hsl(0, 0%, 80%);
+   margin: 1rem;
 }
 
+figure img  {
+    border-bottom: solid hsl(0, 0%, 80%);
+    transition: all 0.3s;
+}
+figure img:hover {
+    cursor: pointer;
+    border-bottom: none;
+    transform: scale(1.15);
+}
 
-/* Header Styles */
+figcaption h3 {
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+figcaption p {
+    padding: 0 1rem 2rem;
+}
+
+/* ==================== Header Styles ==================== */
 
 header {
     position: fixed;
@@ -78,13 +113,13 @@ a:hover {
     color:hsl(0, 50%, 69%);
 }
 
-/* Main Content Styles */
+/* ==================== Main Content Styles ==================== */
 
 section.top-buffer {
     padding-top: 57rem;
 }
 
-/* About Styles */
+/* ==================== About Styles ==================== */
 
 section#about {
     background-color: hsl(0, 0%, 100%);
@@ -100,51 +135,30 @@ section.about-us {
     width: 40%;
 }
 
-/* Services */
+/* ==================== Services ==================== */
 
 section#services {
     background-color: hsl(0, 83%, 91%);
 }
 
-article.services-cta {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
 figure.service {
-    background-color: hsl(0, 0%, 100%);
     max-width: 24.25rem;
-    border: solid hsl(0, 0%, 80%);
-    margin: 1rem;
+    text-align: left;
+    background-color:hsl(0, 0%, 100%);
 }
 
 figure.service img {
-    border-bottom: solid hsl(0, 0%, 80%);
+    
     height: 55%;
 }
 
-figure img  {
-    -moz-transition: all 0.3s;
-    -webkit-transition: all 0.3s;
-    transition: all 0.3s;
-}
-figure img:hover {
-    cursor: pointer;
-    border-bottom: none;
-    -webkit-transform: scale(1.15);
-    -moz-transform: scale(1.15);
-    -o-transform: scale(1.15);
-    -ms-transform: scale(1.15);
-    transform: scale(1.15);
-}
-    
+/* ==================== Staff Members ==================== */
 
-figcaption h3 {
-    padding: 1rem;
-    font-size: 2rem;
+section#staff {
+    background-color: hsl(0deg 0% 100%);
 }
 
-figcaption p {
-    padding: 0 1rem 2rem;
+figure.member {
+    max-width: 25.75rem;
+    background-color: hsl(0, 83%, 91%);
 }
