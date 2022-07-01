@@ -3,9 +3,30 @@ html {
     color: hsl(0, 0%, 43%);
 }
 
+.container {
+    padding: 5rem 3% 8rem;
+    margin-bottom: 15rem;
+    border-top: solid hsl(0, 0%, 80%);
+    border-bottom: solid hsl(0, 0%, 80%);
+}
+
 .chalk {
-    font-family: 'Fredericka the Great', cursive;
     color: hsl(0, 50%, 69%);
+}
+
+h2 {
+    font-size: 5rem;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+h3 {
+    font-size: 2.5rem;
+    padding-bottom: 1rem;
+}
+
+p {
+    font-size: 1.5rem;
 }
 
 
@@ -55,5 +76,22 @@ a:hover {
 
 /* Main Content Styles */
 
+section.top-buffer {
+    padding-top: 57rem;
+}
 
+/* About Styles */
 
+section#about {
+    background-color: hsl(0, 0%, 100%);
+    text-align: center;
+}
+
+article.info-cta {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+section.about-us {
+    width: 40%;
+}
