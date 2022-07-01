@@ -69,8 +69,23 @@ figure img:hover {
 }
 
 figcaption h3 {
-    padding: 1rem;
+    padding: 0 1rem;
     font-size: 2rem;
+    clear: right;
+}
+
+.att {
+    position: relative;
+    float: right;
+    bottom: 1.5rem;
+    font-size: 0.75rem;
+    margin: 0;
+    padding: 0;
+    color: hsl(0, 50%, 69%);
+}
+
+.att-link a {
+    font-size: 0.75rem;
 }
 
 figcaption p {
@@ -107,10 +122,12 @@ nav li+li {
 
 a {
     font-size: 1.5rem;
+    border-bottom: solid thin hsl(0, 0%, 80%);
 }
 
 a:hover {
     color:hsl(0, 50%, 69%);
+    border-bottom: none;
 }
 
 /* ==================== Main Content Styles ==================== */
@@ -148,7 +165,6 @@ figure.service {
 }
 
 figure.service img {
-    
     height: 55%;
 }
 
@@ -183,6 +199,10 @@ article.contact-cta {
     display: flex;
 }
 
+.button-cta a {
+    border: none;
+}
+
 .button {
     padding: 0.5rem;
     margin: 1rem;
@@ -198,3 +218,25 @@ article.contact-cta {
     background-color: hsl(0, 0%, 100%);
     color:hsl(0, 50%, 69%);
 }
+
+/* ==================== Footer ==================== */
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer div {
+    padding: 1rem;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+}
+
+.left p {
+    margin-right: 0.5rem;
+}
+
