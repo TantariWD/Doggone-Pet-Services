@@ -77,15 +77,15 @@ figcaption h3 {
 .att {
     position: relative;
     float: right;
-    bottom: 1.5rem;
-    font-size: 0.75rem;
+    bottom: 1.75rem;
+    font-size: 1rem;
     margin: 0;
     padding: 0;
     color: hsl(0, 50%, 69%);
 }
 
 .att-link a {
-    font-size: 0.75rem;
+    font-size: 1rem;
 }
 
 figcaption p {
@@ -223,8 +223,12 @@ article.contact-cta {
 
 footer {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+}
+
+footer p {
+    font-size: 1rem;
 }
 
 footer div {
@@ -240,3 +244,54 @@ footer div {
     margin-right: 0.5rem;
 }
 
+.right a {
+    font-size: 1rem;
+}
+
+/* ==================== Media Queries ==================== */
+
+@media only screen and (max-width: 1400px) {
+    h2 {
+        font-size: 3.5rem;
+    }
+
+    .contact-cta h3 {
+        font-size: 2.25rem;
+    }
+
+    section#about {
+        padding: 5rem 0 8rem;
+    }
+
+    section.about-us {
+        width: 50%;
+        margin: 2rem;
+    }
+}
+
+@media only screen and (max-width: 1080px) {
+    article.info-cta {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section.about-us {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    a {
+        font-size: 1rem;
+        font-weight: bold;
+    }
+
+    h3 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1.25rem;
+        font-weight: 400;
+    }
+}
