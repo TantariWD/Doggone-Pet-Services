@@ -7,6 +7,11 @@
 
 <h2>Project Requirements</h2>
 <ul>
+  <li>Title, logo, or splash smage</li>
+  <li>Mission statement or brief description of company</li>
+  <li>A list or set of images and titles representing the product(s)/service(s) of the company</li>
+  <li>A section describing some of the company’s employees or teammates</li>
+  <li>Custom styles for other properties, such as colors, fonts, and other layout properties such as borders and padding</li>
   <li>The project should demonstrate the responsive design tools you have learned.
   <br>
   <br>
