@@ -162,3 +162,39 @@ figure.member {
     max-width: 25.75rem;
     background-color: hsl(0, 83%, 91%);
 }
+
+/* ==================== Contact ==================== */
+
+section#contact {
+    padding: 5rem 3% 2rem;
+    border-top: solid hsl(0, 0%, 80%);
+    border-bottom: solid hsl(0, 0%, 80%);
+    text-align: center;
+    background-color: hsl(0, 83%, 91%);
+}
+
+article.contact-cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button-cta {
+    display: flex;
+}
+
+.button {
+    padding: 0.5rem;
+    margin: 1rem;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    background-color: hsl(0deg 50% 69%);
+    color: hsl(0, 0%, 100%);
+    transition: 0.25s ease;
+}
+
+.button:hover {
+    border: solid 0.15rem hsl(0, 50%, 69%);
+    background-color: hsl(0, 0%, 100%);
+    color:hsl(0, 50%, 69%);
+}
