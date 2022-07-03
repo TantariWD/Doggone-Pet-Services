@@ -1,18 +1,26 @@
 
+/* ==================== Root Variables ==================== */
+
+:root {
+    --dark-pink: hsl(0, 50%, 69%);
+    --light-pink: hsl(0, 83%, 91%);
+    --dark-gray: hsl(0, 0%, 43%);
+    --light-gray: hsl(0, 0%, 80%);
+}
 
 /* ==================== Universal Styling ========== */
 /* ==================== Overall & Positioning ========== */
 
 html {
     font-family: 'Josefin Slab', sans-serif;
-    color: hsl(0, 0%, 43%);
+    color: var(--dark-gray);
 }
 
 .container {
     padding: 5rem 3% 8rem;
     margin-bottom: 15rem;
-    border-top: solid hsl(0, 0%, 80%);
-    border-bottom: solid hsl(0, 0%, 80%);
+    border-top: solid var(--light-gray);
+    border-bottom: solid var(--light-gray);
     text-align: center;
 }
 
@@ -33,7 +41,7 @@ article.wrapper {
 /* ==================== Universal Font Styling ==================== */
 
 .chalk {
-    color: hsl(0, 50%, 69%);
+    color: var(--dark-pink);
 }
 
 h2 {
@@ -51,7 +59,7 @@ p {
     font-size: 1.5rem;
 }
 
-/* ==================== Universal Figure Styling ==================== */
+/* ==================== Figure Styling ==================== */
 
 figure {
    border: solid hsl(0, 0%, 80%);
@@ -81,7 +89,7 @@ figcaption h3 {
     font-size: 1rem;
     margin: 0;
     padding: 0;
-    color: hsl(0, 0%, 100%);
+    color: white;
     background-color: hsla(0, 0%, 0%, 0.5);
 }
 
@@ -104,8 +112,8 @@ header {
     z-index: 10;
     width: 100%;
     height: 5rem;
-    background-color: hsl(0, 0%, 100%);
-    border-bottom: solid thin hsl(0, 0%, 80%);
+    background-color: white;
+    border-bottom: solid thin var(--light-gray);
 }
 
 .logo {
@@ -123,25 +131,24 @@ nav li+li {
 
 a {
     font-size: 1.5rem;
-    border-bottom: solid thin hsl(0, 0%, 80%);
+    border-bottom: solid thin var(--light-gray);
 }
 
 a:hover {
-    color:hsl(0, 50%, 69%);
+    color: var(--dark-pink);
     border-bottom: none;
 }
 
 /* ==================== Main Content Styles ==================== */
 
 section.top-buffer {
-    padding-top: 58rem;
+    height: 100vh;
 }
 
 /* ==================== About Styles ==================== */
 
 section#about {
-    background-color: hsl(0, 0%, 100%);
-    text-align: center;
+    background-color: white;
 }
 
 article.info-cta {
@@ -156,13 +163,13 @@ section.about-us {
 /* ==================== Services ==================== */
 
 section#services {
-    background-color: hsl(0, 83%, 91%);
+    background-color: var(--light-pink);
 }
 
 figure.service {
     max-width: 24.25rem;
     text-align: left;
-    background-color:hsl(0, 0%, 100%);
+    background-color:white;
 }
 
 figure.service img {
@@ -172,22 +179,22 @@ figure.service img {
 /* ==================== Staff Members ==================== */
 
 section#staff {
-    background-color: hsl(0deg 0% 100%);
+    background-color: white;
 }
 
 figure.member {
     max-width: 25.75rem;
-    background-color: hsl(0, 83%, 91%);
+    background-color: var(--light-pink);
 }
 
 /* ==================== Contact ==================== */
 
 section#contact {
-    padding: 5rem 3% 2rem;
-    border-top: solid hsl(0, 0%, 80%);
-    border-bottom: solid hsl(0, 0%, 80%);
+    padding: 5rem 3%;
+    border-top: solid var(--light-gray);
+    border-bottom: solid var(--light-gray);
     text-align: center;
-    background-color: hsl(0, 83%, 91%);
+    background-color: var(--light-pink);
 }
 
 article.contact-cta {
@@ -209,15 +216,15 @@ article.contact-cta {
     margin: 1rem;
     font-size: 1.5rem;
     border-radius: 10px;
-    background-color: hsl(0deg 50% 69%);
-    color: hsl(0, 0%, 100%);
+    background-color: var(--dark-pink);
+    color: white;
     transition: 0.25s ease;
 }
 
 .button:hover {
-    border: solid 0.15rem hsl(0, 50%, 69%);
-    background-color: hsl(0, 0%, 100%);
-    color:hsl(0, 50%, 69%);
+    border: solid 0.15rem var(--dark-pink);
+    background-color: white;
+    color: var(--dark-pink);
 }
 
 /* ==================== Footer ==================== */
@@ -251,12 +258,6 @@ footer div {
 }
 
 /* ==================== Media Queries ==================== */
-
-@media only screen and (min-width: 1921px ) {
-    section.top-buffer {
-        padding-top: 95rem;
-    }
-}
 
 @media only screen and (max-width: 1400px) {
     h2 {
